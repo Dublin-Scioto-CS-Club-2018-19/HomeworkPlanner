@@ -25,10 +25,10 @@ limitations under the License. -->
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.DSHS.HwPlanner.Main.MainActivity"
-    tools:showIn="@layout/activity_main"
+    tools:showIn="@layout/fragment_home"
     >
 
-    <!--tools:showIn="@layout/fragment_assignment"-->
+    <!--tools:showIn="@layout/fragment_home"-->
 
 
 
