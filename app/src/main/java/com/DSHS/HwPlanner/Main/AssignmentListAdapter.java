@@ -52,7 +52,7 @@ public class AssignmentListAdapter extends RecyclerView.Adapter<AssignmentListAd
     @Override
     public void onBindViewHolder(AssignmentViewHolder holder, int position) {
         Assignment current = mAssignments.get(position);
-        holder.assignmentItemView.setText(current.getAssignment());
+        holder.assignmentItemView.setText(current.getAssignmentName());
     }
 
     void setAssignments(List<Assignment> assignments){

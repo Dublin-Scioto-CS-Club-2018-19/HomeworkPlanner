@@ -90,9 +90,9 @@ public abstract class AssignmentDatabase extends RoomDatabase {
             // Not needed if you only populate on creation.
             mDao.deleteAll();
 
-            Assignment assignment = new Assignment("Hello", 6, 6, 6, "AP", "oof" );
+            Assignment assignment = new Assignment(0, "Hello", 6, 6, 6, "AP", "oof" );
             mDao.insert(assignment);
-            assignment = new Assignment("World", 5, 5, 5, "IB", "oof" );
+            assignment = new Assignment(0,"World", 5, 5, 5, "IB", "oof" );
             mDao.insert(assignment);
             return null;
         }

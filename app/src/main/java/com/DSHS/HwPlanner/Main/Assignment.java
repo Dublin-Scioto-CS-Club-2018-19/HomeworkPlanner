@@ -39,7 +39,7 @@ public class Assignment {
     @PrimaryKey(autoGenerate = true)
     private int id;
 
-    private String Assignment;
+    private String AssignmentName;
 
     private int dueMonth;
 
@@ -51,8 +51,8 @@ public class Assignment {
 
     private String description;
 
-    public Assignment(@NonNull String assignment, int dueMonth, int dueDay, int priority, String subject, String description) {
-        this.Assignment = assignment;
+    public Assignment(int id, String assignment, int dueMonth, int dueDay, int priority, String subject, String description) {
+        this.AssignmentName = assignment;
         this.dueMonth = dueMonth;
         this.dueDay = dueDay;
         this.priority = priority;
@@ -60,9 +60,38 @@ public class Assignment {
         this.description = description;
     }
 
-    @NonNull
-    public String getAssignment(){
-        return Assignment;
+    public Assignment() {}
+
+    public void setId(@NonNull int id) {
+        this.id = id;
+    }
+
+    public void setAssignmentName(String assignment) {
+        this.AssignmentName = assignment;
+    }
+
+    public void setDueMonth(int dueMonth) {
+        this.dueMonth = dueMonth;
+    }
+
+    public void setDueDay(int dueDay) {
+        this.dueDay = dueDay;
+    }
+
+    public void setPriority(int priority) {
+        this.priority = priority;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getAssignmentName(){
+        return AssignmentName;
     }
 
     public int getId() {
@@ -88,4 +117,6 @@ public class Assignment {
     public String getDescription() {
         return description;
     }
+
+
 }
