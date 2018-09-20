@@ -10,4 +10,6 @@
         android:textSize="30sp"
         android:layout_centerInParent="true"/>
 
+    <include layout="@layout/content_main" />
+
 </RelativeLayout>
