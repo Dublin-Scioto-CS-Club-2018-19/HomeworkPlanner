@@ -1,1 +1,3 @@
 # HomeworkPlanner
+
+It's awesome!
