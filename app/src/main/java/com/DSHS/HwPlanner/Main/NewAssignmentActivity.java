@@ -37,23 +37,23 @@ public class NewAssignmentActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_new_assignment);
-        mEditAssignmentView = findViewById(R.id.edit_assignment);
-
-        final Button button = findViewById(R.id.button_save);
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                Intent replyIntent = new Intent();
-                if (TextUtils.isEmpty(mEditAssignmentView.getText())) {
-                    setResult(RESULT_CANCELED, replyIntent);
-                } else {
-                    String assignment = mEditAssignmentView.getText().toString();
-                    replyIntent.putExtra(EXTRA_REPLY, assignment);
-                    setResult(RESULT_OK, replyIntent);
-                }
-                finish();
-            }
-        });
+//        setContentView(R.layout.activity_new_assignment);
+//        mEditAssignmentView = findViewById(R.id.edit_assignment);
+//
+//        final Button button = findViewById(R.id.button_save);
+//        button.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View view) {
+//                Intent replyIntent = new Intent();
+//                if (TextUtils.isEmpty(mEditAssignmentView.getText())) {
+//                    setResult(RESULT_CANCELED, replyIntent);
+//                } else {
+//                    String assignment = mEditAssignmentView.getText().toString();
+//                    replyIntent.putExtra(EXTRA_REPLY, assignment);
+//                    setResult(RESULT_OK, replyIntent);
+//                }
+//                finish();
+//            }
+//        });
     }
 }
 

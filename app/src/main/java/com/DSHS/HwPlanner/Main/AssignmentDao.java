@@ -40,7 +40,7 @@ public interface AssignmentDao {
     // Always holds/caches latest version of data. Notifies its active observers when the
     // data has changed. Since we are getting all the contents of the database,
     // we are notified whenever any of the database contents have changed.
-    @Query("SELECT * from assignment_table ORDER BY assignment ASC")
+    @Query("SELECT * from assignment_table ORDER BY assignmentName ASC")
     LiveData<List<Assignment>> getAlphabetizedAssignments();
 
     // We do not need a conflict strategy, because the word is our primary key, and you cannot
