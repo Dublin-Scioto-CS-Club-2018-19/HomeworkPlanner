@@ -24,7 +24,7 @@ limitations under the License. -->
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.DSHS.HwPlanner.Main.HomeFragment"
+    tools:context="com.DSHS.HwPlanner.Main.MainActivity"
     tools:showIn="@layout/fragment_home"
     >
 
@@ -38,7 +38,6 @@ limitations under the License. -->
         android:id="@+id/recyclerview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="55dp"
         android:layout_marginTop="55dp"
         android:background="@android:color/darker_gray"
         app:layout_constraintBottom_toBottomOf="parent"
