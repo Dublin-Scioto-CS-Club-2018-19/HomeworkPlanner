@@ -3,14 +3,27 @@
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:background="@android:color/holo_blue_light">
 
-    <!--<include layout="@layout/content_main" />-->
 
-    <TextView
+
+
+    <include layout="@layout/content_assignments" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="@string/assignments_screen"
-        android:textSize="30sp" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="bottom|end"
+        android:layout_above="@layout/content_main"
+        android:src="@drawable/ic_add_black_24dp" />
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:text="@string/assignments_screen"-->
+        <!--android:textSize="30sp" />-->
 
         <!--android:layout_centerInParent="true"-->
 

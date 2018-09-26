@@ -47,12 +47,14 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        // bottom navigation
         BottomNavigationView bottomNav = findViewById(R.id.nav_bottom);
         bottomNav.setOnNavigationItemSelectedListener(navListener);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragments_container,
                 new HomeFragment()).commit();
     }
 
+    // bottom navigation listener setup
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override

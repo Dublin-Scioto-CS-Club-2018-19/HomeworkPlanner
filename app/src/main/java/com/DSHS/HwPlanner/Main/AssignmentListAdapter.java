@@ -34,7 +34,7 @@ public class AssignmentListAdapter extends RecyclerView.Adapter<AssignmentListAd
 
         private AssignmentViewHolder(View itemView) {
             super(itemView);
-            assignmentItemView = itemView.findViewById(R.id.textView);
+            assignmentItemView = itemView.findViewById(R.id.textView_assignments);
         }
     }
 
@@ -45,7 +45,7 @@ public class AssignmentListAdapter extends RecyclerView.Adapter<AssignmentListAd
 
     @Override
     public AssignmentViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View itemView = mInflater.inflate(R.layout.recyclerview_item, parent, false);
+        View itemView = mInflater.inflate(R.layout.recyclerview_item_assignments, parent, false);
         return new AssignmentViewHolder(itemView);
     }
 

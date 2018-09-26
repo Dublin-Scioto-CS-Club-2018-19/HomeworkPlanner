@@ -52,6 +52,7 @@ public class Assignment {
     private String description;
 
     public Assignment(int id, String assignment, int dueMonth, int dueDay, int priority, String subject, String description) {
+        this.id = id;
         this.AssignmentName = assignment;
         this.dueMonth = dueMonth;
         this.dueDay = dueDay;
