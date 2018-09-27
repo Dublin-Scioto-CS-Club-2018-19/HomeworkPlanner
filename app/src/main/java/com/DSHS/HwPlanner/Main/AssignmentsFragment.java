@@ -69,7 +69,7 @@ public class AssignmentsFragment extends Fragment {
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == NEW_ASSIGNMENT_ACTIVITY_REQUEST_CODE && resultCode == RESULT_OK) {
             Assignment assignment = new Assignment(0, data.getStringExtra(NewAssignmentActivity.EXTRA_REPLY),
-                    1, 2, 3, "math", "recursion");
+                    1, 2, 3, data.getStringExtra(NewAssignmentActivity.EXTRA_REPLY), "recursion");
             mAssignmentViewModel.insert(assignment);
         } else {
             Toast.makeText(

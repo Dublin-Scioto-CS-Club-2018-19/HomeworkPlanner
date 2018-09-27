@@ -24,4 +24,6 @@ limitations under the License. -->
     <string name="home_screen">Home Screen</string>
     <string name="assignments_screen">Assignments Screen</string>
     <string name="settings_screen">Settings Screen</string>
+    <string name="assignment_subject">Subject</string>
+    <string name="assignment_name">Assignment Name</string>
 </resources>

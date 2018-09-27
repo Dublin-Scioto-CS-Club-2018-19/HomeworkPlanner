@@ -33,12 +33,14 @@ public class NewAssignmentActivity extends AppCompatActivity {
     public static final String EXTRA_REPLY = "com.example.android.assignmentlistsql.REPLY";
 
     private  EditText mEditAssignmentView;
+    private EditText mEditAssignmentSubject;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_assignment);
         mEditAssignmentView = findViewById(R.id.edit_assignment);
+        mEditAssignmentSubject = findViewById(R.id.edit_assignment_subject);
 
         final Button button = findViewById(R.id.button_save_assignment);
         button.setOnClickListener(new View.OnClickListener() {
@@ -48,6 +50,9 @@ public class NewAssignmentActivity extends AppCompatActivity {
                     setResult(RESULT_CANCELED, replyIntent);
                 } else {
                     String assignment = mEditAssignmentView.getText().toString();
+                    if (!TextUtils.isEmpty(mEditAssignmentSubject.getText())) {
+                        assignment += "\n" + mEditAssignmentSubject.getText().toString();
+                    }
                     replyIntent.putExtra(EXTRA_REPLY, assignment);
                     setResult(RESULT_OK, replyIntent);
                 }
